@@ -1,0 +1,58 @@
+8
+1 maizena 10.0
+2 coca 3.40
+3 macarrao 5.0
+4 cenoura 2.0
+5 presunto 7.0
+6 mussarela 9.0
+7 ovos 15.0
+8 chocolate 20.0
+Carone
+6
+CaroneJdPenha
+4
+1 100
+4 300
+6 1000
+8 230
+CaroneJdCamburi
+3
+4 2000
+6 400
+8 10
+CaroneRetaPenha
+5
+2 90
+3 20
+4 100
+5 500
+6 30
+CaroneSerra
+7
+1 100
+2 200
+3 300
+4 400
+5 500
+6 600
+7 700
+CaroneUfes
+8
+1 100
+2 200
+3 300
+4 400
+5 500
+6 600
+7 700
+8 1000
+CaroneMuqui
+8
+1 100
+2 200
+3 300
+4 400
+5 500
+6 600
+7 700
+8 1000
