@@ -1,0 +1,16 @@
+0 1 2 
+1 2 3 
+2 3 4 
+3 4 5 
+
+A matriz transposta eh:
+0 1 2 3 
+1 2 3 4 
+2 3 4 5 
+
+A matriz multiplicacao eh:
+5 8 11 14 
+8 14 20 26 
+11 20 29 38 
+14 26 38 50 
+
