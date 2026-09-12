@@ -118,7 +118,9 @@ void imprimeMatriz(tMatriz* Matriz)
     {
         for (int j = 0; j < Matriz->coluna; j++)
         {
-            printf(" %s ", Matriz->mat[i][j]);
+            printf("%s", Matriz->mat[i][j]);
+
+            if (j < Matriz->coluna-1) printf(" ");
         }
         printf("\n");
     }
