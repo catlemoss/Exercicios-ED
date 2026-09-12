@@ -1,4 +1,4 @@
-#ifndef _MATRIZ__H_
+#ifndef _MATRIZ_H_
 #define _MATRIZ_H_
 
 typedef struct matriz tMatriz;
