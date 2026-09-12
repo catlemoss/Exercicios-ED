@@ -5,7 +5,7 @@
 
 int main ()
 {
-    FILE* entrada = fopen("entrada3.txt", "r");
+    FILE* entrada = fopen("entrada.txt", "r");
     if (entrada == NULL) exit(1);
 
     FILE* saida = fopen("saida.txt", "w");
