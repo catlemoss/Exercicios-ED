@@ -20,10 +20,12 @@ int main ()
     {
         for (int j = 0; j < colunas; j++)
         {
-            char palavra[STRING];
+            char *palavra = malloc(STRING * sizeof(char));
             fscanf(entrada, "%s", palavra);
 
             addNaMatriz(mat, i, j, palavra);
+
+            free (palavra);
         }
     }
 
@@ -31,25 +33,21 @@ int main ()
 
     printf("============================\n");
 
+    char *find_palavra = malloc(STRING * sizeof(char));
+
     while (1)
     {
         printf("==> Digite a palavra para o caça-palavras ou 0, caso queira sair:\n");
 
-        char find_palavra[STRING];
         scanf("%s", find_palavra);
 
-        if (strcmp(find_palavra, "0") == 0)
-        {
-            printf("Program ended with exit code: 0\n");
-            break;
-        }
+        if (strcmp(find_palavra, "0") == 0) break;
 
-        else
-        {
-            buscaPalavra(mat, find_palavra);
-            printf("\n");
-        }
+        buscaPalavra(mat, find_palavra);
+        printf("\n");
     }
+
+    free (find_palavra);
 
     liberaMatriz(mat);
 

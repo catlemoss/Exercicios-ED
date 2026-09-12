@@ -23,10 +23,12 @@ int main ()
     {
         for (int j = 0; j < colunas; j++)
         {
-            char string[STRING];
+            char *string = malloc(STRING * sizeof(char));
             fscanf(entrada, "%s", string);
 
             modificaMatriz(mat, i, j, string);
+
+            free (string);
         }
     }
 
