@@ -1,0 +1,16 @@
+#ifndef _MATRIZ_H_
+#define _MATRIZ_H_
+
+#include <stdio.h>
+
+typedef struct matriz tMatriz;
+
+tMatriz* criaMatriz(int linhas, int colunas);
+void addNaMatriz(tMatriz* mat, int i, int j, char* string);
+void liberaMatriz(tMatriz* mat);
+
+tMatriz* ordenada(tMatriz* mat);
+
+void imprimeMatriz(FILE* saida, tMatriz* mat);
+
+#endif
