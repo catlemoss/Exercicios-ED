@@ -92,9 +92,12 @@ tAbb* retiraArv(tAbb* arv, tAluno* aluno)
         // um filho na esquerda
         else if (arv->dir == NULL)
         {
-            tAbb* aux = arv;
-            arv = arv->esq;
-            free (aux);
+            tAbb* aux = arv->esq;
+
+            liberaAluno(arv->info);
+            free (arv);
+
+            return aux;
         }
 
         // no tem two kids
